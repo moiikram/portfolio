@@ -1,0 +1,144 @@
+/* Reset styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	background: #1F2D2A;
+	color: #fff;
+	padding: 20px 0;
+	position: sticky;
+	top: 0px;
+	z-index: 1000;
+}
+
+header h1 {
+	font-size: 24px;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between; /*horizontal alignment on opposite sides*/
+	align-items: center; /*Center items vertically*/
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+	padding: 5px;
+	border-radius: 5%;
+	border: 1px solid transparent;
+	
+}
+nav ul li:hover {
+	border: 1px solid grey	
+}
+
+nav ul li:last-child{
+	background-color: #00ccff;
+}
+nav ul li:last-child:hover{
+	background-color: #00ccff;
+	border: 1px solid transparent;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li :hover a {
+	color: #bdb1b1;
+}
+
+nav ul li:last-child a {
+	color: #000000;
+}
+nav ul li:last-child:hover a {
+	color: #ffffff;
+}
+
+section {
+	padding: 40px 0;
+
+}
+
+
+h2 {
+	font-size: 28px;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+.project {
+	margin-bottom: 40px;
+	padding: 20px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.project h3 {
+	font-size: 20px;
+}
+
+.project a {
+	display: inline-block;
+	padding: 10px 15px;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid transparent;
+	border-radius: 5px; /* Add border-radius for rounded corners */
+    transition: background-color 0.3s ease;
+
+}
+
+.project a:hover {
+	background: #666;
+}
+
+footer {
+	background: #1F2D2A;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+	header {
+		padding: 10px 0; /* Reduce header padding */
+	}
+
+	nav ul {
+		flex-direction: column; /* Change flex direction to column */
+		align-items: center; /* Center items vertically */
+	}
+
+	nav ul li {
+		margin-bottom: 10px; /* Add space between menu items */
+	}
+}
